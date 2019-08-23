@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:id="@+id/fl_remote_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qiniu.droid.rtc.QNSurfaceView
+            android:id="@+id/remote_video_surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_local_video_view"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true">
+
+        <com.qiniu.droid.rtc.QNSurfaceView
+            android:id="@+id/local_video_surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/video_chat_small_bac"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:background="#000"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/video_chat_big_bac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:visibility="gone" />
+
+    <include layout="@layout/view_player_bar"></include>
+
+    <LinearLayout
+        android:id="@+id/videochat_right_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_chat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_send_msg" />
+
+        <ImageView
+            android:id="@+id/iv_close_camera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_open_camera" />
+
+        <ImageView
+            android:id="@+id/videochat_voice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_call_unmute" />
+
+        <ImageView
+            android:id="@+id/videochat_switch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_switch_camera" />
+
+        <ImageView
+            android:id="@+id/videochat_screen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/video_screen_shot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/videochat_gift"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_call_gift"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/videochat_lucky_corn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/icon_live_lucky_dial" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close_video_chat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/repulse_call_btn" />
+
+    <TextView
+        android:id="@+id/video_chat_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/videochat_right_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gift_lucky_draw_hint_background"
+        android:gravity="center"
+        android:text="@string/video_chat_msg"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/videochat_timer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/close_video_chat"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_time_info"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通话时长："
+                android:textColor="@color/white" />
+
+            <Chronometer
+                android:id="@+id/videochat_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ll_time"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/user_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_reward"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/videochat_unit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <com.ailiaovideo.videoline.widget.GiftAnimationContentView
+        android:id="@+id/ll_gift_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+    </com.ailiaovideo.videoline.widget.GiftAnimationContentView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content_msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_input_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:hint="请输入内容"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/admin_color"
+            android:text="发送"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

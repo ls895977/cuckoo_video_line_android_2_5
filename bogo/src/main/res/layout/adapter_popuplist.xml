@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="140dp"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:id="@+id/top_shoot_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/left_img_top"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_record_video"/>
+        <TextView
+            android:id="@+id/right_text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/left_img_top"
+            android:text="@string/right_text_top"/>
+    </RelativeLayout>
+
+    <!--<View
+        style="@style/h_line"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/top_uploading_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/left_img_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_upload_video"/>
+        <TextView
+            android:id="@+id/right_text_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/left_img_bottom"
+            android:text="@string/right_text_bottom"/>
+    </RelativeLayout>-->
+
+</LinearLayout>

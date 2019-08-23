@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/adapter_small_video_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_gift_ferrari"/>
+
+    <ImageView
+        android:id="@+id/adapter_small_video_img_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray_no"/>
+
+    <ImageView
+        android:id="@+id/small_video_img_right"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/icon_video_chat"/>
+
+</RelativeLayout>

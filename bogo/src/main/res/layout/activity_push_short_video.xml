@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.ksyun.media.player.KSYTextureView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@drawable/icon_close_white"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginBottom="100dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_title"
+                android:textSize="@dimen/text_size_15"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:hint="@string/input_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_pay"
+                    android:background="@drawable/btn_push_short_video_pay"
+                    android:textColor="@color/white"
+                    android:text="@string/buy_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+                <EditText
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:textColorHint="@color/admin_color"
+                    android:textSize="@dimen/text_size_15"
+                    android:hint="@string/please_input_video_money"
+                    android:textColor="@color/white"
+                    android:id="@+id/et_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_push"
+                android:textColor="@color/white"
+                android:text="@string/push"
+                android:background="@color/admin_color"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

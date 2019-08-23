@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/tojoin_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/light_gray3"></com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <RelativeLayout
+        android:id="@+id/tojoin_cause"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tojoin_topBar"
+        android:background="@drawable/bg_white_black">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/tojoin_cause_text"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/tojoin_right_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_arrow_right" />
+
+        <TextView
+            android:id="@+id/tojoin_select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toStartOf="@+id/tojoin_right_img"
+            android:text="@string/inform_cause_right"
+            android:textColor="@color/track_matte"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/h_line"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tojoin_cause"
+        android:background="@color/background_grayf5" />
+
+    <RelativeLayout
+        android:id="@+id/tojoin_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/line"
+        android:background="@drawable/bg_white_black">
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/tojoin_info_text"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/tojoin_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tojoin_info"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/tojoin_cause_hint"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:textSize="13sp"
+        app:met_clearButton="true"
+        app:met_hideUnderline="true"
+        app:met_maxCharacters="200" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1px"
+        android:background="@color/admin_color"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+</RelativeLayout>

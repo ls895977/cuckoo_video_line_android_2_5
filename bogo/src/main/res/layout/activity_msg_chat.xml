@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/chat_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/admin_color_no1">
+
+        <ImageView
+            android:id="@+id/chat_img_horn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_chat_warning"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/chat_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="2dp"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/chat_img_horn"
+            android:text="@string/chat_hint"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/msg_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/msg_layout">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/msg_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_bg"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_above="@+id/emmm"
+            >
+
+            <ImageView
+                android:id="@+id/msg_voice"
+                android:layout_gravity="center_vertical"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/icon_chat_voice"
+                android:layout_marginLeft="10dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/msg_text"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/boder_gray"/>
+
+            <ImageView
+                android:id="@+id/msg_emmm"
+                android:layout_gravity="center_vertical"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/icon_emoji"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/msg_add"
+                android:layout_gravity="center_vertical"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/icon_chat_more"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/msg_send"
+                android:layout_gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_pink_broder_side"
+                android:text="@string/msg_send"
+                android:textColor="@color/admin_color"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/emmm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/track_matte"
+            android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:id="@+id/msg_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_pink_num"
+            android:padding="5dp"
+            android:layout_above="@+id/msg_layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:src="@drawable/icon_chat_gift"
+                android:layout_marginLeft="5dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+
+            <TextView
+                android:text="@string/msg_gird"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

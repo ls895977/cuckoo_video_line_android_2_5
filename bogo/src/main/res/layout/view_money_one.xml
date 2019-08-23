@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/number_one"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:id="@+id/ranking_one_topimg"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ranking_one_headimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-10dp"
+                android:src="@drawable/wealth_popularity_crown" />
+
+            <ImageView
+                android:id="@+id/ranking_one_buttomimg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ranking_one_headimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-20dp"
+                android:src="@drawable/wealth_popularity_num_one_side" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ranking_one_headimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/test_photo3"
+                app:civ_border_color="@color/maintone"
+                app:civ_border_width="1dp" />
+
+            <ImageView
+                android:id="@+id/ranking_one_img"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ranking_one_headimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-15dp"
+                android:src="@drawable/wealth_popularity_num_one" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/rankinghead_bar_isonLine"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_green_num" />
+
+            <TextView
+                android:id="@+id/rankinghead_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/test_text"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_10"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_level"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/left_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/chat_coins" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/left_icon"
+                android:text="@string/test_number"
+                android:textColor="@color/maintone"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/right_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/left_text"
+                android:src="@drawable/location_hint_male" />
+
+            <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/right_icon"
+                android:text="@string/userinfo_bar_location"
+                android:textColor="@color/maintone"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

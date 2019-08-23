@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/item_iv_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/item_tv_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/item_iv_avatar"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/id_flow_layout"
+        app:max_select="-1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+</RelativeLayout>

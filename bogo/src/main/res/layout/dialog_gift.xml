@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/gift_transparent_black"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_btn_gift"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="礼物"
+            android:textColor="@color/admin_color"
+            android:textSize="@dimen/text_size_15" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray3" />
+
+        <TextView
+            android:id="@+id/tv_btn_backpack"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="背包"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_12" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <com.qmuiteam.qmui.widget.QMUIViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+
+    </com.qmuiteam.qmui.widget.QMUIViewPager>
+
+    <com.qmuiteam.qmui.widget.QMUIViewPager
+        android:id="@+id/view_page_backpack"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:visibility="gone">
+
+    </com.qmuiteam.qmui.widget.QMUIViewPager>
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_money_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/gift_count"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_get_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_money_count"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:text="充值"
+            android:textColor="@color/white" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_count_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_money_count"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="72dp"
+            android:layout_height="31dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gift_sendgift_normal_drawable"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/send"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_gift_count"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:background="@drawable/gift_sendgift_drawable"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="2dp"
+            android:text="x1"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

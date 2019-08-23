@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    final SUPPORT_VERSION = '25.3.1'
+    final JUNIT_VERSION = '4.12'
+    final TRUTH_VERSION = '0.31'
+    final ROBOLECTRIC_VERSION = '3.1.2'
+
+    provided "com.android.support:appcompat-v7:${rootProject.ext.android.androidSupportVersion}"
+    provided "com.android.support:support-v4:$SUPPORT_VERSION"
+    provided "com.android.support:design:$SUPPORT_VERSION"
+
+    testCompile "junit:junit:$JUNIT_VERSION"
+    testCompile "com.google.truth:truth:$TRUTH_VERSION"
+    testCompile "org.robolectric:robolectric:$ROBOLECTRIC_VERSION"
+}

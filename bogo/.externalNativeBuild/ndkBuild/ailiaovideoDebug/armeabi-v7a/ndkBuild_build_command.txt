@@ -1,0 +1,18 @@
+Executable : /Users/weipeng/Library/Android/sdk/ndk-bundle/ndk-build
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp/Android.mk
+NDK_APPLICATION_MK=/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp/Application.mk
+APP_ABI=armeabi-v7a
+NDK_ALL_ABIS=armeabi-v7a
+NDK_DEBUG=1
+APP_PLATFORM=android-16
+NDK_OUT=/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/build/intermediates/ndkBuild/ailiaovideo/debug/obj
+NDK_LIBS_OUT=/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/build/intermediates/ndkBuild/ailiaovideo/debug/lib
+NDK_APPLICATION_MK:=src/main/cpp/Application.mk
+APP_SHORT_COMMANDS=false
+LOCAL_SHORT_COMMANDS=false
+-B
+-n
+jvmArgs : 
+

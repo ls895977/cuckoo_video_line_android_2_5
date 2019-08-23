@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题模板自定义属性 -->
+    <declare-styleable name="ActivityTitle">
+        <!-- 标题文案 -->
+        <attr name="titleText" format="string"/>
+        <!-- 是否有back按钮 -->
+        <attr name="canBack" format="boolean"/>
+        <!-- back按钮文案 -->
+        <attr name="backText" format="string"/>
+        <!-- 右侧更多功能按钮文字 -->
+        <attr name="moreText" format="string"/>
+        <!--标题文案颜色-->
+        <attr name="titleColor" format="color"/>
+        <!--返回键图片-->
+        <attr name="titleBackImg" format="reference"/>
+    </declare-styleable>
+
+    <!-- 条形控制控件自定义属性 -->
+    <declare-styleable name="LineView">
+        <!-- 名称 -->
+        <attr name="name" format="string"/>
+        <!-- 内容或当前状态 -->
+        <attr name="content" format="string"/>
+        <!-- 是否是列表中最后一个 -->
+        <attr name="isBottom" format="boolean"/>
+        <!-- 是否可以跳转 -->
+        <attr name="canNav" format="boolean"/>
+        <!-- 是否是开关 -->
+        <attr name="isSwitch" format="boolean"/>
+        <!-- 最大行数 -->
+        <attr name="maxLength" format="integer"/>
+        <!-- 图标 -->
+        <attr name="iconRes" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPaddingTopBottom" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <!--该属性表示里面的TAB是否均分整个PagerSlidingTabStrip控件的宽,true是,false不均分,从左到右排列,默认false-->
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTextSelectedColor" format="color"/>
+        <!--缩放的最大值,0.3表示放大后最大是原来的0.3倍,默认未0.3-->
+        <attr name="pstsScaleZoomMax" format="float"/>
+        <attr name="pstsSmoothScrollWhenClickTab" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 等级 -->
+    <declare-styleable name="BGLevelTextView">
+    </declare-styleable>
+</resources>

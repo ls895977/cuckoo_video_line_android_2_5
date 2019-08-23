@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_whitle_num_no">
+
+    <ImageView
+        android:id="@+id/dialog_close"
+        android:src="@drawable/icon_close_gray"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/dialog_ratio_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/dialog_close"
+        android:layout_marginTop="5dp"
+        android:text="@string/dialog_ratio_text1"/>
+
+    <LinearLayout
+        android:id="@+id/ratio_ratio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/dialog_ratio_text1">
+
+        <ImageView
+            android:padding="2dp"
+            android:src="@drawable/icon_coin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/radio_radio_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/count_number_divide"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_ratio_text2"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_org_broder_side"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratio_ratio_layout"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:text="@string/dialog_ratio_text2"/>
+
+    <TextView
+        android:text="@string/dialog_ratio_numebr"
+        android:textColor="@color/maintone"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/dialog_ratio_text2"
+        android:layout_marginBottom="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@+id/dialog_ratio_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_left_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_pink_noc"
+            android:textColor="@color/admin_color"
+            android:text="@string/dialog_ratio_grader"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/dialog_right_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_pink_btn"
+            android:textColor="@color/white"
+            android:text="@string/dialog_ratio_invite"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

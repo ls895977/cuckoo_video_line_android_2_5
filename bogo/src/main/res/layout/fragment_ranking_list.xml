@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <RadioGroup
+            android:id="@+id/ranking_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:buttonTint="@color/admin_color"
+                android:checked="true"
+                android:drawableLeft="@drawable/bg_radio_days"
+                android:text="@string/radio_days"
+                android:textColor="@drawable/textcolor_admin_matte"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_weeks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:button="@null"
+                android:buttonTint="@color/admin_color"
+                android:drawableLeft="@drawable/bg_radio_weeks"
+                android:text="@string/radio_weeks"
+                android:textColor="@drawable/textcolor_admin_matte"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:button="@null"
+                android:buttonTint="@color/admin_color"
+                android:drawableLeft="@drawable/bg_radio_weeks"
+                android:text="月榜"
+                android:textColor="@drawable/textcolor_admin_matte"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_alls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:button="@null"
+                android:buttonTint="@color/admin_color"
+                android:checked="true"
+                android:drawableLeft="@drawable/bg_radio_alls"
+                android:text="@string/radio_alls"
+                android:textColor="@drawable/textcolor_admin_matte"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_my_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/text_my_ranking"
+            android:textColor="@color/track_matte"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/ranking_fresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ranking_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

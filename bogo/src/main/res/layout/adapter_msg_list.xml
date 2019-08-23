@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/adapter_msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/msg_list_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon_system_notification"/>
+
+        <TextView
+            android:id="@+id/msg_list_title"
+            style="@style/text_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/test_text"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/msg_list_icon"/>
+
+        <ImageView
+            android:id="@+id/msg_list_right"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_arrow_right"/>
+
+        <TextView
+            android:id="@+id/msg_list_item"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="@string/test_number2"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_pink_num"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/h_line"
+        android:layout_height="1px"/>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp/Android.mk",
+    "/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp/Application.mk"
+  ],
+  "cleanCommands": [
+    "/Users/weipeng/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp/Android.mk NDK_APPLICATION_MK\u003d/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp/Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/build/intermediates/ndkBuild/ailiaovideo/release/obj NDK_LIBS_OUT\u003d/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/build/intermediates/ndkBuild/ailiaovideo/release/lib NDK_APPLICATION_MK:\u003dsrc/main/cpp/Application.mk clean"
+  ],
+  "libraries": {
+    "apm-plugin-video-preprocessing-ailiaovideoRelease-armeabi": {
+      "buildCommand": "/Users/weipeng/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp/Android.mk NDK_APPLICATION_MK\u003d/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp/Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/build/intermediates/ndkBuild/ailiaovideo/release/obj NDK_LIBS_OUT\u003d/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/build/intermediates/ndkBuild/ailiaovideo/release/lib NDK_APPLICATION_MK:\u003dsrc/main/cpp/Application.mk /Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/build/intermediates/ndkBuild/ailiaovideo/release/obj/local/armeabi/libapm-plugin-video-preprocessing.so",
+      "toolchain": "toolchain-armeabi",
+      "abi": "armeabi",
+      "artifactName": "apm-plugin-video-preprocessing",
+      "files": [
+        {
+          "src": "/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp/video_preprocessing_plugin_jni.cpp",
+          "flags": "-gcc-toolchain /Users/weipeng/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 -fpic -ffunction-sections -funwind-tables -fstack-protector-strong -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -fno-integrated-as -g -target armv5te-none-linux-androideabi16 -march\u003darmv5te -mtune\u003dxscale -msoft-float -fno-exceptions -fno-rtti -mthumb -Os -DNDEBUG -I/Users/weipeng/Library/Android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport -I/Users/weipeng/Library/Android/sdk/ndk-bundle/sources/cxx-stl//gabi++/include -I/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/src/main/cpp -std\u003dc++11 -DANDROID -D__ANDROID_API__\u003d16 -Wa,--noexecstack -Wformat -Werror\u003dformat-security -frtti --sysroot /Users/weipeng/Library/Android/sdk/ndk-bundle/sysroot -isystem /Users/weipeng/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi"
+        }
+      ],
+      "output": "/Users/weipeng/Desktop/work/code/bogo_video_line_android/bogo/build/intermediates/ndkBuild/ailiaovideo/release/obj/local/armeabi/libapm-plugin-video-preprocessing.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi": {
+      "cppCompilerExecutable": "/Users/weipeng/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bac"
+    tools:context=".ui.CuckooLoginSelectActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/login_way_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/app_name"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_login_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttom_layout"
+            android:layout_marginBottom="50dp">
+
+            <RelativeLayout
+                android:id="@+id/ll_mobile"
+                style="@style/login_way_ll_style"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_mobile"
+                        style="@style/login_way_iv_style"
+                        android:src="@drawable/icon_login_phone" />
+
+                    <TextView
+                        style="@style/login_way_tv_style"
+                        android:layout_toRightOf="@+id/iv_mobile"
+                        android:text="@string/mobile" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_facebook"
+                style="@style/login_way_ll_style"
+                android:layout_below="@+id/ll_qq"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/facebook_iv"
+                        style="@style/login_way_iv_style"
+                        android:src="@drawable/icon_login_fb" />
+
+                    <TextView
+                        style="@style/login_way_tv_style"
+                        android:layout_toRightOf="@+id/facebook_iv"
+                        android:text="Facebook" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_wechat"
+                style="@style/login_way_ll_style"
+                android:layout_below="@+id/ll_mobile"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_chat"
+                        style="@style/login_way_iv_style"
+                        android:src="@drawable/icon_login_wecht" />
+
+                    <TextView
+                        style="@style/login_way_tv_style"
+                        android:layout_toRightOf="@+id/iv_chat"
+                        android:text="@string/wechat" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_qq"
+                style="@style/login_way_ll_style"
+                android:layout_below="@+id/ll_wechat"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+
+                    <ImageView
+                        android:id="@+id/iv_qq"
+                        style="@style/login_way_iv_style"
+                        android:src="@drawable/icon_login_qq" />
+
+                    <TextView
+                        style="@style/login_way_tv_style"
+                        android:layout_toRightOf="@+id/iv_qq"
+                        android:text="QQ 登录" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_of_service_tx"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/terms_of_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/terms_of_service"
+                android:textColor="@color/admin_color"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

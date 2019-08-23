@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="170dp">
+
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="@dimen/text_size_12"
+            android:id="@+id/et_code"
+            android:background="@null"
+            android:hint="@string/please_input_invite_code"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_left"
+            android:textStyle="bold"
+            android:textColor="@color/admin_color"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="没有邀请码"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_right"
+            android:textStyle="bold"
+            android:textColor="@color/admin_color"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="提交"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

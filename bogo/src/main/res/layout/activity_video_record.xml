@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.tencent.rtmp.ui.TXCloudVideoView>
+
+    <com.qmuiteam.qmui.widget.QMUIProgressBar
+        android:id="@+id/pg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:textColor="@color/qmui_config_color_white"
+        android:textSize="16sp"
+        app:qmui_background_color="@color/qmui_config_color_gray_8"
+        app:qmui_progress_color="@color/admin_color"
+        app:qmui_type="type_rect" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/video_back_enable" />
+
+        <ImageView
+            android:id="@+id/iv_switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/switch_camera_white" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_record"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_video_record_btn"
+        android:text="@string/click_beat"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

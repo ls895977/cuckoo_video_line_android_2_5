@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/qmui_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_ll"
+        android:layout_below="@+id/qmui_top_bar">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/input_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/background_grayf5" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:hint="说点什么吧..."
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_publish_common"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="发送"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</RelativeLayout>

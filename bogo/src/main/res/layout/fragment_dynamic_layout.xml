@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <com.qmuiteam.qmui.widget.QMUIViewPager
+        android:id="@+id/roll_view_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top_content" />
+
+    <View
+        style="@style/h_line"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_top_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            app:tabBackground="@android:color/transparent"
+            app:tabIndicatorColor="@color/color_network_bar_bg_ee4b62"
+            app:tabIndicatorHeight="0dp"
+            app:tabPaddingEnd="8dp"
+            app:tabPaddingStart="8dp"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextColor="@color/text_gray1"></android.support.design.widget.TabLayout>
+
+        <ImageView
+            android:id="@+id/iv_dynamic"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_upload_media" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="left_btn" type="id">false</item>
+    <item name="right_btn" type="id">false</item>
+
+    <item name="prize_to_upload" type="id">false</item>
+
+    <item name="mine_ed" type="id">false</item>
+
+    <item name="msg_left_btn" type="id">false</item>
+
+    <item name="msg_right_btn" type="id">false</item>
+
+    <item name="select_file_ok" type="id">false</item>
+
+    <item name="select_file_back" type="id">false</item>
+
+    <item name="redact_savebtn" type="id">false</item>
+
+    <item name="redact_backbtn" type="id">false</item>
+
+    <item name="all_backbtn" type="id">false</item>
+
+    <item name="sett_login_out" type="id">false</item>
+
+    <item name="sett_black" type="id">false</item>
+
+    <item name="sett_custom_video_coin" type="id">false</item>
+
+    <item name="sett_about_me" type="id">false</item>
+
+    <item name="sett_switch_language" type="id">false</item>
+
+    <item name="wealth_split" type="id">false</item>
+
+    <item name="wealth_cash" type="id">false</item>
+
+    <item name="custom_qq" type="id">false</item>
+
+    <item name="sett_do_not" type="id">false</item>
+
+    <item name="wealth_recharge" type="id">false</item>
+
+
+    <item name="auth_user_nickname" type="id">false</item>
+
+    <item name="auth_bind_phone" type="id">false</item>
+
+    <item name="auth_user_weight" type="id">false</item>
+
+    <item name="auth_user_height" type="id">false</item>
+
+    <item name="auth_user_constellation" type="id">false</item>
+
+    <item name="auth_image_label" type="id">false</item>
+
+    <item name="auth_self_label" type="id">false</item>
+
+    <item name="auth_introduce" type="id">false</item>
+    <item name="auth_city" type="id">false</item>
+</resources>

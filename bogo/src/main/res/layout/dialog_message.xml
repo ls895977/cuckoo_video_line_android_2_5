@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_left"
+            android:textColor="@color/admin_color"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_right"
+            android:textColor="@color/admin_color"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/determine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

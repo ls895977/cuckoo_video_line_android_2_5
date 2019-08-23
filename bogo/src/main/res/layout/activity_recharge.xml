@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_top_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <!--充值方式-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_gray3" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content_list_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="虚拟币仅用于视频聊天和送礼物"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_10" />
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="微信支付请加客服微信13869574698      点击复制"
+            android:textColor="@color/red" />
+        <!--充值规则-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="@string/select_money"
+                android:textColor="@color/black" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recharge_rule_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_pay_pal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lightblue"
+            android:text="@string/pay_pal_pay"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1px"
+            android:background="@color/admin_color"
+            android:text="@string/one_key_rechange"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:id="@+id/call_player_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/call_player_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="15dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/call_player_name"
+        style="@style/text_white"
+        android:layout_alignTop="@+id/call_player_img"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/call_player_img"
+        android:text="@string/test_text"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/call_player_msg"
+        style="@style/text_white"
+        android:layout_alignBottom="@+id/call_player_img"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/call_player_img"
+        android:text="@string/loading_now_call"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/repulse_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/repulse_call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/repulse_call_btn" />
+
+            <TextView
+                android:id="@+id/repulse_call_msg"
+                style="@style/text_white"
+                android:layout_marginTop="5dp"
+                android:text="@string/repulse_call"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accept_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/accept_call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/accept_call_btn" />
+
+            <TextView
+                style="@style/text_white"
+                android:layout_marginTop="5dp"
+                android:text="@string/accept_call"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

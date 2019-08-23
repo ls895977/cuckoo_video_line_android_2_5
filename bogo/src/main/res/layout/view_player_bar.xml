@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bg_beckoning_num">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/this_player_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:id="@+id/ll_label_center_info"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/this_player_img"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/this_player_name"
+                android:text="@string/loading"
+                android:textSize="8sp"
+                style="@style/text_white"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/this_player_number"
+                android:text="@string/loading"
+                android:textSize="8sp"
+                style="@style/text_white"
+                android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/this_player_loveme"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_pink_num"
+            android:layout_toRightOf="@+id/ll_label_center_info"
+            android:text="@string/count_text_love"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+</merge>

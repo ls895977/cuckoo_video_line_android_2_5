@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.qmuiteam.qmui.widget.QMUIProgressBar
+        android:id="@+id/pg_bar"
+        android:textColor="@color/qmui_config_color_white"
+        android:textSize="16sp"
+        app:qmui_background_color="@color/qmui_config_color_gray_8"
+        app:qmui_progress_color="@color/admin_color"
+        app:qmui_type="type_rect"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+    </com.tencent.rtmp.ui.TXCloudVideoView>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/video_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="录制视频展露全脸，自我介绍(我是*** 与昵称一致)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/white"
+            android:text="拍摄最低三秒"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_record_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:background="@drawable/bg_auth_video_record_btn_up"
+                android:id="@+id/btn_record"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="按住拍摄"
+                android:textColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_record_next"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_restart"
+                android:src="@drawable/record_video_restart"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <ImageView
+                android:id="@+id/iv_next"
+                android:src="@drawable/record_video_confirm"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

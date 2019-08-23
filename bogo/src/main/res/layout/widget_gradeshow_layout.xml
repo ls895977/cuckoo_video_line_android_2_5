@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/grades_layout"
+    android:layout_width="30dp"
+    android:layout_height="15dp"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/grades_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"/>
+    <TextView
+        android:id="@+id/grades_number"
+        style="@style/white_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:textSize="12sp" />
+</LinearLayout>

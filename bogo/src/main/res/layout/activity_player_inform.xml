@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/inform_cause"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_white_black">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/inform_cause_text"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/inform_right_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_arrow_right" />
+
+        <TextView
+            android:id="@+id/select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toStartOf="@+id/inform_right_img"
+            android:text="@string/inform_cause_right"
+            android:textColor="@color/track_matte"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/h_line"
+        android:layout_height="1px" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:hint="@string/inform_cause_hint"
+        android:inputType="textMultiLine"
+        android:textSize="12sp"
+        app:met_clearButton="true"
+        app:met_hideUnderline="true"
+        app:met_maxCharacters="200" />
+
+    <View
+        style="@style/h_line"
+        android:layout_height="1px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/inform_cause_img"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_select_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

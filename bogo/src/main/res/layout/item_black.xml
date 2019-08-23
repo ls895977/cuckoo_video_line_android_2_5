@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_iv_avatar"
+            android:layout_centerVertical="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/item_iv_avatar"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="3dp"
+            android:background="@drawable/bg_relieve_black"
+            android:id="@+id/item_tv_relieve"
+            android:textSize="@dimen/text_size_10"
+            android:text="解除黑名单"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</LinearLayout>

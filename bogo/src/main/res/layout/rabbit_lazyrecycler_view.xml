@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout
+        android:id="@+id/lazy_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lazy_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout>
+
+</FrameLayout>

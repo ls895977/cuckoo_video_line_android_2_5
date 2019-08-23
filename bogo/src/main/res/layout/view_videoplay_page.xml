@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/msg_page_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sw_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                </com.youth.banner.Banner>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_video"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal">
+
+                <com.ailiaovideo.videoline.widget.VideoDoFragment
+                    android:id="@+id/left_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="2.5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"/>
+
+                <com.ailiaovideo.videoline.widget.VideoDoFragment
+                    android:id="@+id/right_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/videoplay_all_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_pink_broder"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:src="@drawable/video_chat_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/admin_color"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/videoplay_all_push"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

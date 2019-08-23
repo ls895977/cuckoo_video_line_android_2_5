@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/home_page_down_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/home_page_chat_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/chat_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_imessage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chart_text"
+                android:text="@string/home_page_chat"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/home_page_video_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/vide0_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_video_chat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vide0_text"
+                android:text="@string/home_page_video"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/home_page_gift_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gift_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_gift"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_text"
+                android:text="@string/home_page_gift"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

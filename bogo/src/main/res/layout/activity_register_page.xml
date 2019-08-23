@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ailiaovideo.videoline.widget.FullScreenVideoView
+        android:id="@+id/register_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/track_matte">
+
+        <LinearLayout
+            android:id="@+id/center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/regiter_there_bar"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/register_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp">
+
+                <ImageView
+                    android:id="@+id/register_logo_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/register_logo_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/register_logo_logo"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/register_logo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_logo_logo"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/register_logo_text"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/register_weixin_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_whitle_num"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_register_wexin" />
+
+                <TextView
+                    android:id="@+id/register_btn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_btn_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register_phone_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/phone_number_edtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edtext"
+                        android:digits="@string/phone_number_digits"
+                        android:hint="@string/phone_number_hint"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/gray" />
+
+                    <Button
+                        android:id="@+id/code_phone_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_grid_no2_num"
+                        android:enabled="false"
+                        android:text="@string/verify"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/phone_code_edtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_edtext"
+                    android:digits="@string/phone_number_digits"
+                    android:hint="@string/phone_code_hint"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/register_phone_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_grid_no2_num"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/register"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/regiter_there_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttom_layout"
+            android:layout_marginBottom="120dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradual_left_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/register_msg_there"
+                android:textColor="@color/colorTextG1"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradual_right_white" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/regiter_from_phone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/buttom_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/icon_login_phone" />
+
+        <ImageView
+            android:id="@+id/regiter_from_weixin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/buttom_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/icon_login_weixin"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/buttom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_of_service_tx"
+                android:textColor="@color/colorTextG1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/terms_of_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_of_service"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

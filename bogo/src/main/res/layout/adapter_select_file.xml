@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/select_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <CheckBox
+        android:id="@+id/select_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:checked="false"
+        />
+
+    <TextView
+        android:id="@+id/text_filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="filename"
+        android:layout_toRightOf="@+id/select_check"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/text_filesize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="size"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/text_filepath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

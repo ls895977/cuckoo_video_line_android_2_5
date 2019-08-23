@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ksyun.media.player.KSYTextureView
+        android:id="@+id/video_play_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/video_play_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_close_white_20" />
+
+    <include layout="@layout/view_player_bar"></include>
+
+    <LinearLayout
+        android:id="@+id/call_player_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_pink_num"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_video_detail_call" />
+
+        <TextView
+            style="@style/text_white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/call_player_btn"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/love_player_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_grid_num"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/love_player_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_video_like_count" />
+
+        <TextView
+            android:id="@+id/love_player_number"
+            style="@style/text_white"
+            android:layout_marginLeft="5dp"
+            android:text="@string/test_number"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_player_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/love_player_btn"
+        android:background="@drawable/bg_grid_num"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_video_share" />
+
+        <TextView
+            android:id="@+id/share_player_number"
+            style="@style/text_white"
+            android:layout_marginLeft="5dp"
+            android:text="@string/test_number"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/player_video_title"
+        style="@style/text_white"
+        android:layout_above="@+id/love_player_btn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/test_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/share_me_msg"
+        style="@style/text_white"
+        android:layout_above="@+id/share_player_btn"
+        android:layout_alignLeft="@+id/share_player_btn"
+        android:background="@drawable/icon_bottom_share_hint"
+        android:padding="8dp"
+        android:text="@string/share_me_msg"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/toload_video"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/video_loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/same_city_isNull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/local_city_visit_limit"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:text="@string/same_city_msg"/>
+
+        <TextView
+            android:id="@+id/same_city_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_pink_btn"
+            android:text="@string/same_city_btn"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_margin="30dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

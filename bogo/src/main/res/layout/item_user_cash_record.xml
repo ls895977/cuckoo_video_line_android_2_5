@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/item_tv_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/admin_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_tv_time"
+            android:textSize="@dimen/text_size_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/item_tv_status"
+            android:textSize="@dimen/text_size_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

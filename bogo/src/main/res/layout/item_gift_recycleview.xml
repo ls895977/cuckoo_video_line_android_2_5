@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content_list"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rv_content_list"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_money_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/gift_count"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_get_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_money_count"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:drawablePadding="5dp"
+            android:text="充值"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="72dp"
+            android:layout_height="31dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gift_sendgift_normal_drawable"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:text="@string/send"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_gift_count"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:background="@drawable/gift_sendgift_drawable"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="2dp"
+            android:text="x1"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

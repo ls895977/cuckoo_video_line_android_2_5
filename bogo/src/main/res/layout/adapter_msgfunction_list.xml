@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/msgfunction_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_logo_logo"/>
+
+    <TextView
+        android:id="@+id/msgfunction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="@string/app_name"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

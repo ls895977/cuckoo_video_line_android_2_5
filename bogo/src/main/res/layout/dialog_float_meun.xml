@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_whitle_dialog"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/edit_mine"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="@string/edit_mine"
+            android:textColor="@color/admin_color"
+            android:textSize="16sp" />
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px" />
+
+        <TextView
+            android:id="@+id/join_black_list"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="@string/join_black_list"
+            android:textColor="@color/admin_color"
+            android:textSize="16sp" />
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px" />
+
+        <TextView
+            android:id="@+id/report_this_user"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="@string/report_this_user"
+            android:textColor="@color/admin_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@color/noColor" />
+
+    <TextView
+        android:id="@+id/dialog_dis"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/bg_whitle_dialog"
+        android:gravity="center"
+        android:text="@string/admin_no"
+        android:textColor="@color/admin_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--加粗android:textStyle="bold"-->
+
+</LinearLayout>
